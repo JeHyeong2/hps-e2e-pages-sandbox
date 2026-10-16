@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>신제형짱짱5050 | 치료 전에 사진으로 충분히 설명드리는 치과</title>
-<meta name="description" content="신제형짱짱5050 - 진료 안내, 병원 소개, 오시는 길">
+<title>shinbro치과 | 진료 안내 · 오시는 길</title>
+<meta name="description" content="shinbro치과 - 진료 안내, 병원 소개, 오시는 길">
 <style>
   :root {
     --ink: #1f2a33;
     --ink-soft: #5b6770;
     --surface: #ffffff;
     --surface-alt: #f4f8f9;
-    --accent: #1d7a7a;
-    --accent-deep: #145757;
+    --accent: #1e2f4d;
+    --accent-deep: #13203a;
     --line: #dde6e9;
     --radius: 14px;
   }
@@ -56,9 +56,12 @@
   }
   .menu a:hover { background: var(--surface-alt); }
   .menu .tel-btn {
-    background: var(--accent); color: #fff;
+    background: rgba(30, 47, 77, 0.78); color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 6px 18px rgba(30, 47, 77, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.25);
   }
-  .menu .tel-btn:hover { background: var(--accent-deep); }
+  .menu .tel-btn:hover { background: rgba(30, 47, 77, 0.9); }
 
   /* 첫 화면 */
   .demo-band {
@@ -67,7 +70,7 @@
     border-bottom: 1px solid #f0d98a;
   }
   .hero {
-    background: linear-gradient(180deg, var(--surface-alt), var(--surface));
+    background: var(--surface);
     padding: 96px 0 88px;
   }
   .hero .eyebrow { color: var(--accent); font-weight: 700; margin: 0 0 12px; }
@@ -86,10 +89,20 @@
     border-radius: 999px; font-weight: 700; text-decoration: none;
     transition: background 200ms ease, transform 200ms ease;
   }
-  .btn-primary { background: var(--accent); color: #fff; }
-  .btn-primary:hover { background: var(--accent-deep); }
-  .btn-ghost { border: 2px solid var(--accent); color: var(--accent-deep); margin-left: 10px; }
-  .btn-ghost:hover { background: var(--surface-alt); }
+  .btn-primary {
+    background: rgba(30, 47, 77, 0.78); color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(30, 47, 77, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  }
+  .btn-primary:hover { background: rgba(30, 47, 77, 0.9); }
+  .btn-ghost {
+    border: 1px solid rgba(30, 47, 77, 0.22); color: var(--accent-deep);
+    background: rgba(255, 255, 255, 0.55); margin-left: 10px;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(30, 47, 77, 0.08);
+  }
+  .btn-ghost:hover { background: rgba(255, 255, 255, 0.75); }
   .btns { display: flex; flex-wrap: wrap; gap: 10px; }
 
   .intro-sub { font-size: 1.05rem; margin: 18px 0 6px; color: var(--accent-deep); }
@@ -139,7 +152,7 @@
     border-radius: var(--radius); padding: 28px 24px;
     transition: transform 200ms ease, box-shadow 200ms ease;
   }
-  .card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(31,42,51,0.08); }
+  .card:hover { border-color: var(--accent); }
   .card .icon { width: 40px; height: 40px; color: var(--accent); margin-bottom: 14px; }
   .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
   .card p { margin: 0; color: var(--ink-soft); font-size: 0.97rem; }
@@ -202,7 +215,7 @@
 <!-- 맨 위 메뉴 줄 -->
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#top">신제형짱짱5050</a>
+    <a class="brand" href="#top">shinbro치과</a>
     <nav class="menu" aria-label="주요 메뉴">
       <a href="#about">병원 소개</a>
       <a href="#treatment">진료 안내</a>
@@ -217,18 +230,17 @@
   <!-- 첫 화면 -->
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">처음 오신 분을 위한 치과</p>
-      <h1>치료 전에 사진으로<br>충분히 설명드리는 신제형짱짱5050</h1>
+      <p class="eyebrow">shinbro치과</p>
+      <h1>shinbro치과</h1>
       <p class="lead">
-        처음 오시는 분도 부담 없이 상담받으실 수 있도록,
-        사진으로 현재 상태를 함께 보고 치료 과정을 차근차근 설명드립니다.
+        치료 전에 사진으로 상태를 함께 보고, 이해하신 뒤에 진행합니다.
       </p>
       <div class="btns">
         <a class="btn btn-primary" data-phone>전화로 예약하기 02-000-0000</a>
         <a class="btn btn-ghost" href="#visit">오시는 길 보기</a>
       </div>
 
-      <img class="hero-photo" src="images/clinic-interior.jpg" alt="신제형짱짱5050 진료실 내부">
+      <img class="hero-photo" src="images/clinic-interior.jpg" alt="shinbro치과 진료실 내부">
 
       <!-- 첫 화면 정보 띠: 진료시간 · 전화 · 위치 -->
       <dl class="quick">
@@ -252,7 +264,7 @@
   <!-- 병원 소개 -->
   <section id="about" class="block">
     <div class="wrap intro-grid">
-      <img class="intro-photo" src="images/clinic-exterior.jpg" alt="신제형짱짱5050 건물 외관" loading="lazy">
+      <img class="intro-photo" src="images/clinic-exterior.jpg" alt="shinbro치과 건물 외관" loading="lazy">
       <div class="intro-text">
         <h2>병원 소개</h2>
 
@@ -316,7 +328,7 @@
         <div class="map">
           <iframe
             src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C%20396&output=embed"
-            title="신제형짱짱5050 위치 지도"
+            title="shinbro치과 위치 지도"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
           <p class="map-address">서울특별시 강남구 강남대로 396, 3층</p>
@@ -359,7 +371,7 @@
 <footer>
   <div class="wrap">
     <div>
-      <strong>신제형짱짱5050</strong><br>
+      <strong>shinbro치과</strong><br>
       대표원장 김솔<br>
       사업자등록번호 000-00-00000 (교육용 가상 번호)
     </div>
@@ -374,7 +386,7 @@
           <path d="M9 7h4.6l5.4 8.1V7H23v14h-4.6l-5.4-8.1V21H9z" fill="#fff"/>
         </svg>
       </a><br>
-      © 2026 신제형짱짱5050. 교육용 예시 페이지입니다.
+      © 2026 shinbro치과. 교육용 예시 페이지입니다.
     </div>
   </div>
 </footer>
